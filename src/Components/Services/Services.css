@@ -1,0 +1,107 @@
+.services {
+  padding: 3rem 0;
+  background-color: hsl(210, 20%, 10%);
+}
+.services_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3rem;
+}
+.services__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+  padding: 0 2rem;
+}
+
+.services-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  /* height: 300px; */
+  padding: 20px 15px;
+  box-shadow: var(--box-shadow-img-hover);
+  margin-bottom: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: hsl(210, 20%, 20%);
+}
+.services-card p {
+  font-weight: var(--font-normal);
+  text-align: center;
+  color: hsl(210, 20%, 80%);
+}
+.services-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--box-shadow-img);
+}
+
+.services-card:hover .icon {
+  color: var(--body-color);
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  margin-bottom: 2rem;
+}
+.icon {
+  text-align: center;
+  padding: 0.5rem;
+  font-size: var(--h3-font-size);
+  color: var(--main-font-color);
+  margin-bottom: var(--mb-1-5);
+  background-color: var(--main-font-color);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.icon i {
+  color: #fff;
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+.title {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-meduim);
+  margin-bottom: var(--mb-1-5);
+  color: var(--main-font-color);
+  transition: 0.3s;
+}
+
+.content p {
+  font-size: var(--small-font-size);
+  font-weight: var(--font-normal);
+}
+
+.services-card--hidden {
+  display: none;
+}
+
+/* ======== BREAKPOINTS======== */
+/* Large device */
+@media screen and (max-width: 992px) {
+  .services__content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Medium device */
+@media screen and (max-width: 768px) {
+  .services__content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* Small device */
+@media screen and (max-width: 576px) {
+  .services__content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

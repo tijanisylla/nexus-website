@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* ======== Varirables ======== */
+:root {
+  --header-height: 3rem;
+  /* ======== Colors ======== */
+  --hue: 0;
+  --sat: 0%;
+  --title-color: hsl(var(--hue), var(--sat), 20%);
+  --title-color-dark: hsl(var(--hue), var(--sat), 0%);
+  --text-color: hsl(var(--hue), var(--sat), 10%);
+  --body-color: hsl(var(--hue), var(--sat), 98%);
+  --container-color: #fff;
+  --main-font-color: rgb(24, 144, 255);
+  --background-hover-color: #1088f7;
+  --background-active-color: #0880ef;
+  --box-shadow-img: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  --social-instagram: #e1306c;
+  --social-facebook: #1877f2;
+  --social-twitter: #1da1f2;
+  --social-youtube: #ff0000;
+  --social-linkedin: #0e76a8;
+
+  /* ======== Font and typography ======== */
+  --body-font: "Poppins", sans-serif;
+
+  /* .5rem = 8px | 1rem = 16px ... */
+
+  --big-font-size: 3.5rem;
+  --h1-font-size: 2.25rem;
+  --h2-font-size: 1.5rem;
+  --h3-font-size: 1.25rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.875rem;
+  --smaller-font-size: 0.813rem;
+  --tiny-font-size: 0.625rem;
+
+  /* ======== Font weight ======== */
+
+  --font-normal: 400;
+  --font-meduim: 500;
+  --font-semi-bold: 600;
+
+  /* ======== Margenes Bottom ======== */
+  --mb-0-25: 0.25rem;
+  --mb-0-5: 0.5rem;
+  --mb-0-75: 0.75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+  /* ======== Z-index ======== */
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+}
+
+/* ======== BASE======== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+button,
+input,
+textarea {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  /* background: linear-gradient(90deg, var(--grey) 31px, transparent 1px) 50%,
+    linear-gradient(180deg, var(--grey) 31px, var(--blue) 1px) 50%;
+  background-size: 33px 33px; */
+  background-color: var(--body-color);
+  color: var(--text-color);
+  transition: all 0.5s ease;
+}
+
+/* ======== Light an Dark ======== */
+body.dark {
+  --hue: 210;
+  --sat: 20%;
+  --title-color: hsl(var(--hue), var(--sat), 90%);
+  --title-color-dark: hsl(var(--hue), var(--sat), 100%);
+  --text-color: hsl(var(--hue), var(--sat), 80%);
+  --body-color: hsl(var(--hue), var(--sat), 10%);
+  --container-color: hsl(var(--hue), var(--sat), 20%);
+  --grey: hsl(var(--hue), var(--sat), 10%);
+  --grey-d-1: hsl(var(--hue), var(--sat), 30%);
+  --grey-d-2: hsl(var(--hue), var(--sat), 40%);
+  --grey-d-3: hsl(var(--hue), var(--sat), 50%);
+  --box-shadow-img: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  --background-hover-color: hsl(var(--hue), var(--sat), 30%);
+  /* social dark mode */
+  /* --social-instagram: hsl(var(--hue), var(--sat), 70%);
+  --social-facebook: hsl(var(--hue), var(--sat), 70%);
+  --social-twitter: hsl(var(--hue), var(--sat), 70%);
+  --social-youtube: hsl(var(--hue), var(--sat), 70%);
+  --social-linkedin: hsl(var(--hue), var(--sat), 70%); */
+}
+
+/* Home Social Icons colors */
+body.dark .home__social {
+  color: hsl(var(--hue), var(--sat), 70%);
+}
+body.dark .home__social:hover {
+  color: hsl(var(--hue), var(--sat), 90%);
+}
+/*  */
+/* home img shadow */
+body.dark .home__img {
+  box-shadow: inset 9px 10px 10px 0.5px rgba(244, 244, 247, 0.21);
+}
+
+/* Home page backgdound image */
+/* body.dark .home {
+  background-image: url(../assets/logo-white.png);
+} */
+
+/* Dark mode input field */
+body.dark .contact__form-input {
+  background-color: hsl(var(--hue), var(--sat), 20%);
+  color: var(--title-color);
+}
+body.dark label {
+  color: var(--title-color);
+}
+/* Home img bg */
+body.dark .home__img--inner {
+  background-image: url(../assets/logo-black.png);
+}
+
+body.dark ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--text-color);
+  opacity: 1; /* Firefox */
+}
+
+body.dark :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: var(--text-color);
+}
+
+body.dark ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: var(--text-color);
+}
+/* Responsive Typography */
+@media screen and (max-width: 993px) {
+  :root {
+    --big-font-size: 2.75rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h1-font-size: 1rem;
+    --normal-font-size: 0.938rem;
+    --small-font-size: 0.813;
+    --smaller-font-size: 0.75rem;
+  }
+}
+h1,
+h2,
+h3 {
+  color: var(--main-font-color);
+  font-weight: var(--font-semi-bold);
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+p {
+  color: var(--text-color);
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ======== RESUSABLE CSS CLASSES======== */
+.section {
+  padding: 6rem 0 2rem;
+  min-height: 100vh;
+  max-width: 100vw;
+}
+.section__title {
+  font-size: var(--h1-font-size);
+  color: var(--main-font-color);
+}
+
+.section__subtitle {
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: 4rem;
+}
+.section__title,
+.section__subtitle {
+  text-align: center;
+}
+/* ========  LAYOUT ======== */
+
+.container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+/* ======== BUTTONS ======== */
+
+.button {
+  display: inline-block;
+  background-color: var(--main-font-color);
+  color: var(--body-color);
+  padding: 1rem 2rem;
+  font-weight: var(--font-meduim);
+  box-shadow: var(--box-shadow-img);
+}
+.button2 {
+  display: inline-block;
+  background-color: var(--title-color-dark);
+  color: var(--body-color);
+  padding: 1rem 2rem;
+  font-weight: var(--font-meduim);
+  margin-left: 1rem;
+  box-shadow: var(--box-shadow-img);
+}
+
+.button__icon {
+  margin-left: var(--mb-0-5);
+}
+.button--flex i:hover {
+  transform: scale(1.2);
+}
+.button--flex {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
+}
+.button--small {
+  padding: 0.5rem 1rem;
+  font-weight: var(--font-meduim);
+}
+/* ======== BREAKPOINTS======== */
+
+/* Large device */
+@media screen and (max-width: 992px) {
+  .container {
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+  }
+  .button {
+    padding: 1rem 1.75rem;
+  }
+  .button__icon {
+    width: 22px;
+    height: 22px;
+  }
+}
+/* Meduim device */
+@media screen and (max-width: 768px) {
+  body {
+    margin: 0 0 var(--header-height) 0;
+  }
+  .section {
+    padding: 2rem 0 4rem;
+  }
+  .section__subtitle {
+    margin-bottom: var(--mb-3);
+  }
+}
+/* Meduim device */
+@media screen and (max-width: 576px) {
+}
+
+/* Small device */
+@media screen and (max-width: 350px) {
+  :root {
+    --big-font-size: 2.25rem;
+  }
+  .container {
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+  }
+}

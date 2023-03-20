@@ -1,0 +1,85 @@
+.form-email {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    -20deg,
+    white 0%,
+    white 50%,
+    var(--main-font-color) 10%,
+    var(--main-font-color) 100%
+  );
+
+  padding: 0.5rem;
+  /* box-shadow: 0.25rem 0.25rem 1.5rem rgba(0, 0, 0, 0.05); */
+}
+.form-email__subtitle {
+  font-size: var(--font-size-2);
+  color: #fff;
+  font-weight: 600;
+  text-align: center;
+}
+.form-email__description {
+  font-size: var(--font-size-2);
+  color: var(--main-font-color);
+  font-weight: 600;
+  text-align: center;
+  padding: 0.5rem 0.25rem 5rem;
+}
+.form-email-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 0.5rem 0.5rem;
+}
+.form-email-container input[type="email"] {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: var(--font-size-2);
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0.25rem 0.25rem 1.5rem rgba(0, 0, 0, 0.5);
+  margin: 0.5rem 0;
+  border: 2px solid var(--main-font-color);
+}
+.form-email-button {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: var(--font-size-2);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0.25rem 0.25rem 1.5rem rgba(0, 0, 0, 0.5);
+  margin: 0.5rem 0;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.form-email-button:hover {
+  background: var(--main-font-color);
+  color: white;
+}
+.bx-loader-circle {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border: 0.25rem solid var(--main-font-color);
+  border-top-color: transparent;
+  animation: spin 0.75s linear infinite;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,67 @@
+===== Header =====
+Home
+AI features
+Services
+About Us
+Contact Us (Get in touch)
+Option for Dark-Mode && Light-Mode
+
+===== Home =====
+A visually stunning welcome section 
+that showcases the benefits of our upcoming AI virtual assistant app 
+with finance solutions for investment and wealth management tools. 
+Our color scheme will be royal blue and forest green
+Ability to smoothly scroll to each section, such as About, Services, Contact Us, etc.
+
+
+===== Services =====
+Our AI virtual assistant app will provide a 
+comprehensive range of investment and wealth management services to help 
+you achieve your financial goals. With personalized investment portfolios 
+tailored to your unique financial situation, our app will help you optimize y
+our tax strategies and manage your risk effectively.
+Whether you're a new investor looking to get started in the world of investing or an
+experienced investor seeking to improve your portfolio performance, our app offers a
+range of benefits that can help you succeed. With our cutting-edge AI technology, you can
+rest assured that you're making informed investment decisions that are based on advanced 
+algorithms and predictive analytics.
+By using our app, you can enjoy increased portfolio performance and reduced risk
+, as well as access to a range of other benefits that are designed to help you manage your wealth effectively.
+With our AI virtual assistant by your side, you can be confident that you're making the most of your
+investment opportunities and achieving your financial goals.
+
+
+===== AI features =====
+Our AI virtual assistant is designed to provide personalized investment strategies and intelligent wealth management tools to help you make informed investment decisions. 
+With advanced algorithms and predictive analytics,
+our AI is capable of analyzing large amounts of data to 
+identify trends and patterns, and then providing recommendations 
+tailored to your unique financial situation and goals.
+
+===== About US =====
+Welcome to Nexus, where we believe that everyone should have access to smart and efficient 
+investment and wealth management tools. Our mission is to make this a reality through our
+cutting-edge AI virtual assistant app.
+At Nexus, we have a team of experts in finance, technology, and data science, 
+who are dedicated to developing innovative solutions for our users. With their expertise,
+our AI virtual assistant will provide you with personalized investment portfolios,
+tax optimization strategies, and risk management tools that are tailored to your individual needs.
+We are committed to responsible and ethical investing, and our values reflect this commitment.
+Our team is always researching and implementing the latest sustainable investing strategies to
+help you achieve your financial goals while making a positive impact on the world.
+With Nexus, you can trust that you are in good hands. Our team 
+is passionate about providing you with the best investment and wealth management
+experience possible, and we can't wait to help you take control of your financial future.
+
+
+===== Careers =====
+
+===== Contact Us =====
+An easy-to-use contact form that allows users to get in touch with us quickly and easily.
+Clear information about our business hours (24/7),
+location (Chicago) and contact information,
+including phone number and email address.
+For now, this will be my personal phone and email address until I say otherwise.
+
+
+
